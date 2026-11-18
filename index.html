@@ -377,7 +377,7 @@
   stage.addEventListener("pointerdown", function (e) {
     stage.setPointerCapture(e.pointerId);
     pointers.set(e.pointerId, { x: e.clientX, y: e.clientY });
-    if (pointers.size === 1) downAt = { x: e.clientX, y: e.clientY, t: Date.now() };
+    if (pointers.size === 1) downAt = { x: e.clientX, y: e.clientY, t: Date.now(), el: e.target };
     if (pointers.size === 2) {
       var p = Array.from(pointers.values());
       pinch0 = { d: dist(p[0], p[1]), s: view.s };
@@ -409,8 +409,9 @@
     }
     pointers.delete(e.pointerId);
     if (pointers.size < 2) pinch0 = null;
-    if (wasTap && e.target && e.target.closest) {
-      var n = e.target.closest(".node");
+    var tapEl = (downAt && downAt.el) || e.target;
+    if (wasTap && tapEl && tapEl.closest) {
+      var n = tapEl.closest(".node");
       if (n) select(n.getAttribute("data-node"));
     }
     if (pointers.size === 0) downAt = null;
