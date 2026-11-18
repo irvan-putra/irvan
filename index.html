@@ -149,9 +149,9 @@
       <g class="detail">
         <text class="item" x="100" y="166">intodo &#183; tumbuh &#183; denyut &#183; tuju</text>
         <text class="item" x="100" y="192">menit &#183; sapa &#183; kemas &#183; jin</text>
-        <text class="item" x="100" y="218">fae &#183; onda &#183; bidik &#183; saku</text>
+        <text class="item" x="100" y="218">unggah &#183; onda &#183; bidik &#183; saku</text>
         <text class="item" x="100" y="244">cabang</text>
-        <text class="item" x="100" y="276" style="font-style: italic; fill: var(--muted);">13 one-purpose android apps</text>
+        <text class="item" x="100" y="276" style="font-style: italic; fill: var(--muted);">13 little android apps</text>
       </g>
     </g>
 
@@ -254,7 +254,7 @@
     },
     apps: {
       title: "apps",
-      desc: "Thirteen little Android apps, each with one job: an encrypted reminder widget (intodo), a commitment sorter (tumbuh), an on-device assistant (denyut), a busway map (tuju), an AI screen-time dial (menit), an audience counter (sapa), and more. Public source, com.vanipy.*, offline where it counts.",
+      desc: "Thirteen little Android apps, all public source under com.vanipy.*. Some are released and installable, others are still prototypes - the APK gallery shows which are ready.",
       links: [
         ["apk gallery", "https://vanipy.com/kaji/apk/"],
         ["all repos", "https://github.com/irvan-putra?tab=repositories"]
@@ -467,7 +467,6 @@
 
   fit();
   window.addEventListener("resize", onResize);
-  if (stage.getBoundingClientRect().width < 700) centerOn(600, 430, 1.3);
 
   // shareable state: #place=apps, or ?z=2&cx=600&cy=400 for a framed view
   var q = new URLSearchParams(location.search);
