@@ -30,4 +30,4 @@ the Android asset:
 
 ## License
 
-AGPL-3.0, like tumbuh-app. See LICENSE.
+AGPL-3.0. See LICENSE.
