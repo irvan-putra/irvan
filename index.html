@@ -62,6 +62,7 @@
   }
 
   header {
+    flex-wrap: wrap; gap: .4rem;
     position: fixed; top: 0; left: 0; right: 0; z-index: 5;
     display: flex; justify-content: space-between; align-items: center;
     padding: .55rem .8rem;
@@ -106,6 +107,9 @@
     font: inherit; font-size: 1.1rem; line-height: 1;
     background: none; border: none; color: var(--muted); cursor: pointer;
   }
+.android-release{display:block;position:relative;z-index:7;margin:12px 0;padding:10px 12px;border:1px solid #8886;border-radius:8px;font:14px/1.45 system-ui,sans-serif;background:Canvas;color:CanvasText;overflow-wrap:anywhere}.android-release a{color:LinkText}.android-release small{display:block;margin-top:4px;font-size:12px}
+header .android-release{pointer-events:auto;flex-basis:100%;margin:0;padding:6px 9px;max-width:26rem}header .android-release small{font-size:11px}
+@media(max-width:560px){header .brand span{display:none}}
 </style>
 </head>
 <body>
@@ -116,6 +120,7 @@
     <button id="zout" aria-label="zoom out">&#8722;</button>
     <button id="zfit">fit</button>
   </nav>
+<aside class="android-release" aria-label="Android version"><a href="https://github.com/irvan-putra/irvan/releases/download/v0.1.0/irvan-v0.1.0.apk">Download irvan for Android v0.1.0</a> · <a href="https://github.com/irvan-putra/irvan/releases/tag/v0.1.0">Release notes</a><small>Test release; not verified on a physical phone.</small></aside>
 </header>
 
 <div id="stage">
