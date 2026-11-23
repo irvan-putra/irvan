@@ -26,7 +26,7 @@ the Android asset:
     python3 android/tools/build_map_asset.py --check   # or without --check to regenerate
 
 `assets/irvan-photo.png` is his own photo, reused from
-[irvan-putra/fae](https://github.com/irvan-putra/fae) at his request.
+[irvan-putra/unggah](https://github.com/irvan-putra/unggah) at his request.
 
 ## License
 
