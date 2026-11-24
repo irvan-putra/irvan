@@ -31,3 +31,7 @@ the Android asset:
 ## License
 
 AGPL-3.0. See LICENSE.
+
+---
+
+Built with AI assistance (Instinct and others). Not everything has been reviewed by Irvan.
